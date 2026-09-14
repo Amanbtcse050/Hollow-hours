@@ -12,18 +12,6 @@ function updateCounter() {
 }
 input.addEventListener("input", updateCounter);
 
-releaseButton.addEventListener("click", () => {
-  const text = input.value.trim();
-  if (!text) return;
-  const thoughts = JSON.parse(localStorage.getItem("hollowHoursThoughts") || "[]");
-  thoughts.push({ text, time: new Date().toISOString() });
-  localStorage.setItem("hollowHoursThoughts", JSON.stringify(thoughts.slice(-25)));
-  input.value = "";
-  updateCounter();
-  savedNote.textContent = "Left quietly. It will stay on this device.";
-  setTimeout(() => savedNote.textContent = "", 5000);
-});
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
