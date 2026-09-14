@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const list = document.createElement("section");
   list.id = "shared-thoughts";
+  list.className = "wrap";
   list.style.marginTop = "28px";
+  list.style.paddingBottom = "60px";
   (box.closest("section") || box.parentElement)?.parentElement?.appendChild(list);
 
   async function load() {
