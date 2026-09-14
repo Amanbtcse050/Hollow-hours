@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a11">
+  <meta name="description" content="A quiet place for heavy evenings. Leave a thought on the bench.">
+  <title>hollow hours — quiet kindness corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Inter:wght@400;500&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="rain" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Hollow Hours home">
+      <span class="brand-mark">h</span>
+      <span>hollow hours</span>
+    </a>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">
+      <span class="sound-dot"></span>
+      <span id="soundLabel">Ambient sound&nbsp; off</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A quiet place, for heavy evenings</p>
+        <h1>The rain keeps<br>falling on the<br>window, and<br>that is alright.</h1>
+        <p class="intro">Sit a while. No one is asking for anything of you here.<br class="desktop"> Just a bench, a sky the color of dusk, and a little room to let the evening pass through you.</p>
+      </div>
+
+      <div class="scene reveal">
+        <div class="moon"></div>
+        <div class="mountains"></div>
+        <div class="water"></div>
+        <div class="lamp">
+          <span class="lamp-glow"></span>
+          <span class="lamp-head"></span>
+          <span class="lamp-post"></span>
+        </div>
+        <div class="bench"></div>
+        <div class="person">
+          <span class="head"></span>
+          <span class="body"></span>
+          <span class="leg leg-a"></span>
+          <span class="leg leg-b"></span>
+        </div>
+        <div class="tree tree-a"></div>
+        <div class="tree tree-b"></div>
+        <div class="scene-caption">
+          <span>scene 01 — the bench</span>
+          <span>00:00</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="thoughts wrap">
+      <div class="section-heading">
+        <span></span>
+        <p>Passing thoughts</p>
+        <span></span>
+      </div>
+
+      <article class="thought featured reveal">
+        <p>“We are not the same as we were before the rain began. And that is not a loss — it is a weathering.”</p>
+        <small>— left on the bench, 4:47 pm</small>
+      </article>
+
+      <article class="thought reveal">
+        <p>“Some evenings you are only allowed to exist quietly, the way the streetlamp is allowed to burn.”</p>
+        <small>— the last train, gone</small>
+      </article>
+
+      <article class="thought reveal">
+        <p>“The window fogged over again, and I let it. Some things are kinder when you cannot read them.”</p>
+        <small>— an unnamed letter</small>
+      </article>
+    </section>
+
+    <section class="leave wrap reveal">
+      <div class="leave-card">
+        <p class="leave-title">Leave a thought on the bench</p>
+        <p class="leave-subtitle">No names, no accounts — just the sound of someone else having sat here too.</p>
+        <textarea id="thoughtInput" maxlength="400" placeholder="Evening. The kettle went cold, and I did not mind it..."></textarea>
+        <div class="form-row">
+          <span id="counter">0 of 400 characters</span>
+          <button id="releaseButton" type="button" disabled>Release it</button>
+        </div>
+        <p class="saved-note" id="savedNote" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>hollow hours — kept low, kept quiet</span>
+    <em>the storm will pass; you need not hold it up</em>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
