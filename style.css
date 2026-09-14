@@ -70,7 +70,7 @@ h1{font:700 clamp(43px,5.2vw,73px)/1.06 var(--serif);letter-spacing:-.045em;marg
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: 62% center;
+    object-position: 62% 70% center;
 }
 
 .scene-caption{position:absolute;z-index:4;bottom:13px;left:14px;right:14px;display:flex;justify-content:space-between;color:#777c8d;font:9px var(--mono)}
